@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>注册</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1"/>
+	<link rel="stylesheet" href="css/reset.css" />
+	<link rel="stylesheet" href="components/bootstrap/css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="components/font-awesome/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="bodybg">
+<article>
+	<img src="images/title_03.png" class="login-title"/>
+	<section class="register-form">
+		<div class="step">
+			<div class="active"><span>1</span>验证手机号</div>
+			<div class="active"><span>2</span>填写账号信息</div>
+			<div><img src="images/notsuccess_03.png"/>注册成功</div>
+		</div>
+		<form action="" method="post" class="step2">
+			<div class="bigbox">
+				<input type="text" class="width100" name="username" onblur="checkName()" placeholder="用户名" /> 
+				<div class="res-name">
+					<img src="images/info.png"/><span></span>
+				</div>
+			</div>
+			<div class="bigbox">
+				<input type="password" class="width100" name="userpass" onblur="checkPass()" placeholder="密码" /> 
+				<div class="res-pass">
+					<img src="images/info.png"/><span></span>
+				</div>
+			</div>
+			<div class="bigbox">
+				<input type="password" class="width100" name="againpass" onblur="checkAgain()" placeholder="重复密码" /> 
+				<div class="res-again">
+					<img src="images/info.png"/><span></span>
+				</div>
+			</div>
+			<div class="bigbox">
+				<input type="text" class="width100" name="name" onblur="checkTrueName()" placeholder="姓名" /> 
+				<div class="res-trueName">
+					<img src="images/info.png"/><span></span>
+				</div>
+			</div>
+			<div class="bigbox">
+				<input type="text" class="width100" name="company" onblur="checkCompany()" placeholder="公司名" /> 
+				<div class="res-company">
+					<img src="images/info.png"/><span></span>
+				</div>
+			</div>
+			<input type="submit" class="width100" value="下一步"/>
+		</form>
+	</section>
+</article>
+</body>
+<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="components/bootstrap/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" src="js/check.js"></script>
+</html>

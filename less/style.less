@@ -1,0 +1,933 @@
+//----------------------------header
+.navbar{
+    background: #fff;
+    border: none;
+    box-shadow: 0 0 30px rgba(0,0,0,.05);
+    border-radius: 0;
+    margin: 0;
+    .navbar-brand{
+        height: auto;
+        padding: 21px 0 21px 50px;
+    }
+    .navbar-nav{
+        padding-top: 15px;
+        li{
+            margin-top: 10px;
+            a{
+                color: #6c7a87;
+                height: 30px;
+                line-height: 30px;
+                padding: 0;
+                margin: 0 16px;
+                text-align: center;
+            }
+            .active{
+                color: #3c8cf3;
+            }
+            .nav-login,.nav-register{
+                padding: 0 15px;
+                margin: 0 8px;
+                border: 1px solid #3c8cf3;
+            }
+            .nav-login{
+                color: #3c8cf3;
+            }
+            .nav-register{
+                color: #fff;
+                background: #3c8cf3;
+                box-shadow: 0 0 15px rgba(60,140,243,.3);
+            }
+            .nav-register:hover{
+                color: #fff;
+                background: #3c8cf3;
+                box-shadow: 0 0 15px rgba(60,140,243,.3);
+            }
+        }
+            
+    }
+    .navbar-toggle{
+        margin-top: 21px;
+    }
+}
+.banner{
+    text-align: center;
+    position: relative;
+    .bannerbg{
+        position: absolute;
+        width: 100%;
+        height: 550px;
+        background-image: url(../images/index1_02.jpg);
+        background-size: cover;
+        background-position-x: center;
+        z-index: -1;
+    }
+    h3{
+        margin: 0;
+        font-size: 32px;
+        font-weight: 100;
+        padding-top: 100px;
+    }
+    img{
+        width: 100%;
+    }
+}
+.btn-try{
+    margin: 0 auto;
+    display: block;
+    width: 170px;
+    height: 50px;
+    background: #3c8cf3;
+    box-shadow: 0 0 30px rgba(0,0,0,.18);
+    border: none;
+}
+.title{
+    padding-top: 106px;
+    text-align: center;
+    h4{
+        font-size: 24px;
+        margin-bottom: 35px;
+    }
+    h5{
+        font-size: 14px;
+        color: #748599;
+    }
+}
+.intelligence{
+    margin: 50px 0;
+    box-shadow: 0 10px 30px rgba(0,0,0,.05);
+    padding: 30px;
+    h5{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    ul{
+        margin: 0;
+    }
+    li{
+        display: inline-block;
+        width: 48%;
+    }
+}
+.effect{
+    h3{
+        span{
+            font-size: 20px;
+        }
+    }
+    ul{
+        width: 80%;
+    }
+    p{
+        font-size: 14px;
+        color: #6c7a87;
+        padding-left: 40px;
+    }
+}
+.index-bg{
+    position: relative;
+    .the-bg{
+        position: absolute;
+        width: 100%;
+        height: 840px;
+        top: 200px;
+        left: 0;
+        background: #f9fafc;
+        z-index: -1;
+    }
+}
+.achievements{
+    box-shadow: 0 10px 30px rgba(0,0,0,.2);
+    border-radius: 6px;
+    text-align: center;
+    margin: 30px 0;
+    background: #fff;
+    h4{
+        border-bottom: 1px solid #ebecf0;
+        text-align: left;
+        margin-bottom: 30px;
+    }
+    h5{
+        padding-top: 10px;
+    }
+    h1{
+        font-size: 84px;
+        color: #3c8cf3;
+        padding-bottom: 20px;
+        span{
+            font-size: 42px;
+        }
+    }
+}
+.work-station{
+    margin: 20px 0 0 0;
+    text-align: center;
+    h3{
+        margin: 0;
+        font-size: 20px;
+    }
+    hr{
+        width: 20px;
+        border: 1px solid;
+        margin: 20px auto;
+    }
+    p{
+        color: #6c7a87;
+    }
+}
+.knowMore{
+    display: block;
+    margin: 50px;
+    text-align: center;
+}
+.cooperate{
+    background: #f9fafc;
+    padding: 70px 0;
+    .col-sm-4{
+        text-align: center;
+    }
+}
+.info-try{
+    text-align: center;
+    padding: 120px 0;
+    h3{
+        font-size: 24px;
+    }
+    p{
+        margin: 30px 0 48px;
+    }
+}
+footer{
+    text-align: center;
+    background: #f9fafc;
+    padding: 25px 0;
+    color: #9eaabe;
+    span{
+        margin: 0 25px;
+    }
+}
+//---------------------------------function
+.communicate{
+    background: #f9fafc;
+    padding-bottom: 60px;
+}
+.carousel{
+    .carousel-control{
+        color: #999;
+        background: none;
+        width: 5%;
+        span{
+            font-size: 30px;
+        }
+    }
+    .left{
+        left: -5%;
+    }
+    .right{
+        right: -5%;
+    }
+}
+.communicate{
+    .col-sm-6{
+        text-align: center;
+        margin: 40px 0;
+        h4{
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        p{
+            color: #7a848d;
+            margin: 0;
+        }
+    }
+}
+.function-box{
+    .row{
+        margin: 86px 0 0 0;
+        .col-lg-7, .col-lg-3{
+            padding: 0;
+        }
+    }
+    img{
+        width: 100%;
+    }
+    .col-lg-3{
+        display: flex;
+        align-items: center;
+    }
+    h3{
+        font-size: 18px;
+        margin: 0;
+        span{
+            display: inline-block;
+            width: 3px;
+            height: 22px;
+            background: #3c8cf3;
+            margin-right: 10px;
+        }
+    }
+    p{
+        padding-left: 14px;
+        color: #6c7a87;
+    }
+    ul{
+        list-style: none;
+        counter-reset: count;
+        padding-top: 10px;
+        li{
+            color: #2c3033;
+        }
+        li:before{
+            content: "● ";
+            color: #51ca2f;
+        }
+    }
+}
+//-----------------------客户
+.customer{
+    position: relative;
+    .customerbg{
+        height: 390px;
+        background-image: url(../images/kefu_02.png);
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        background-position: center;
+    }
+    h2{
+        margin: 0;
+        padding-top: 100px;
+        text-align: center;
+        color: #fff;
+        font-size: 24px;
+    }
+    .row{
+        padding-top: 50px;
+        .head-white{
+            text-align: center;
+            color: #fff;
+        }
+        .head-black{
+            text-align: center;
+        }
+    }
+    .customer-content{
+        position: relative;
+        padding: 40px;
+        border-radius: 8px;
+        margin-top: 56px;
+        line-height:30px;
+        box-shadow: 0 0 30px rgba(0,0,0,.08);
+        img{
+            position: absolute;
+        }
+    }
+    .white{
+        background: #fff;
+        img{
+            top: -13px;
+            left: -43px;
+        }
+    }
+    .black{
+        background: #3c8cf3;
+        color: #fff;
+        img{
+            top: -14px;
+            right: -43px;
+        }
+    }
+}
+//---------------------------价格
+.daodao{
+    position: relative;
+    h2{
+        text-align: center;
+        color: #fff;
+        margin:0;
+        font-size: 24px;
+        padding-top: 100px;
+    }
+    h6{
+        text-align: center;
+        color: #ccc;
+        margin: 30px 0 100px 0;
+    }
+    .try-box{
+        width: 60%;
+        margin: 80px auto 120px auto;
+        border: 1px solid #f2f2f2;
+        .btn-try{
+            margin-top: -26px;
+        }
+        p{
+            text-align: center;
+            color: #a8a8a8;
+            margin: 14px 0;
+        }
+    }
+}
+.pricebg{
+    position: absolute;
+    top:0;
+    width: 100%;
+    height: 340px;
+    background: #505362;
+    z-index:-1;
+}
+.price{
+    .row{
+        background: #fff;
+        padding: 12px 0;
+        box-shadow: 0 0 30px rgba(0,0,0,.08);
+        margin-bottom: 50px;
+    }
+    .version{
+        color: #fff;
+        text-align: center;
+        padding: 30px 0;
+        h1{
+            font-size: 30px;
+            margin: 0;
+        }
+        h5{
+            font-size: 18px;
+            margin: 20px 0 0 0;
+        }
+    }
+    ul{
+        li{
+            background-image: url(../images/dui_03.jpg);
+            background-repeat: no-repeat;
+            background-position: 0 8px;
+            padding-left: 20px;
+            line-height: 30px;
+        }
+    }
+    .the-price{
+        h3{
+            font-size: 36px;
+            color: #3c8cf3;
+            text-align: center;
+            label{
+                font-size: 20px;
+            }
+        }
+        h4{
+            border: 1px solid #d2d2d2;
+            color: #d2d2d2;
+            font-size: 14px;
+            width: 84px;
+            text-align: center;
+            margin: 0 auto;
+            padding: 2px;
+        }
+    }
+    .the-more{
+        padding-top: 50px;
+        a{
+            display: block;
+            margin: 0 auto;
+            color: #3c8cf3;
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            line-height: 28px;
+            border:1px solid #3c8cf3;
+            border-radius: 50%;
+            font-size: 20px;
+            text-decoration: none;
+        }
+    }
+}
+//-------------------------------------------常见问题
+.questionbg{
+    position: absolute;
+    top:0;
+    width: 100%;
+    height: 496px;
+    background-image: url("../images/help_02.jpg");
+    background-position: center;
+    z-index:-1;
+}
+.question{
+    padding: 20px 30px;
+    width: 75%;
+    margin: 50px auto 0 auto;
+    background: #fff;
+    box-shadow: 0 0 30px rgba(0,0,0,.08);
+    h3{
+        margin: 20px 0;
+        font-size: 18px;
+    }
+    p{
+        line-height: 30px;
+        color: #8894a0;
+        padding-left: 32px;
+    }
+    h5{
+        font-size: 18px;
+        text-align: center;
+        margin-top: 70px;
+    }
+    img{
+        display: block;
+        margin: 30px auto 70px auto;
+    }
+}
+.aboutbg{
+    position: absolute;
+    top:0;
+    width: 100%;
+    height: 596px;
+    background-image: url("../images/aboutbg_02.jpg");
+    background-position: center;
+    z-index:-1;
+}
+.about-us{
+    margin-top: 90px;
+    margin-bottom: 12px;
+    box-shadow: 0 0 30px rgba(0,0,0,.08);
+    background: #fff;
+    .col-xs-12{
+        border-left: 1px solid #f1f2f3;
+        border-bottom: 1px solid #f1f2f3;
+        div{
+            height: 440px;
+            padding: 0 35px;
+            img{
+                display: block;
+                margin: 60px auto;
+                border:1px solid #f1f2f3;
+                border-radius: 50%;
+            }
+            p{
+                line-height: 26px;
+                color: #575e66;
+            }
+        }
+    }
+    .col-xs-12:first-child{
+        border-left: none;
+    }
+}
+//--------------------------------------登录注册
+.bodybg{
+    background: url(../images/loginbg.jpg) no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+.width100{
+    width: 400px;
+}
+.bigbox{
+    width: 800px;
+}
+input[type="text"],input[type="password"]{
+    color: #fff;
+}
+input:focus{
+    border: 1px solid #fff !important;
+}
+.bigbox{
+    div{
+        display: none;
+        display: inline-block;
+        color: #fff;
+        img{
+            width: 22px;
+            height: 22px;
+            margin: 0 5px;
+        }
+    }
+}
+.login-title{
+    display: block;
+    margin: 145px auto 90px auto;
+}
+.login-form{
+    margin: 0 auto 50px auto;
+    width: 400px;
+    h5{
+        display: none;
+        margin: 0 0 20px 0;
+        height: 40px;
+        line-height: 40px;
+        background: rgba(255,255,255,.1);
+        color: #fff;
+        span{
+            display: inline-block;
+            width: 18px;
+            height: 18px;
+            margin-right: 8px;
+            line-height: 18px;
+            color: #838067;
+            background: #eee280;
+            border-radius: 50%;
+        }
+    }
+    .login-btn{
+        display: block;
+        width: 100%;
+        height: 66px;
+        text-align: left;
+        margin-bottom: 32px;
+        font-size: 17px;
+        text-indent: 64px;
+        border: transparent;
+        border-radius: 5px;
+        background-color: rgba(255,255,255,.4);
+        background-repeat: no-repeat;
+        background-position: 19px 19px;
+    }
+    ::-webkit-input-placeholder{
+        color: #e6e6e6;
+    }
+    .login-btn:nth-child(2){
+        background-image: url(../images/login-icon_03.png);
+    }
+    .login-btn:nth-child(3){
+        display: none;
+        background-image: url(../images/login-icon_05.png);
+    }
+    .login-btn:nth-child(4){
+        background-image: url(../images/login-icon_06.png);
+    }
+    select{
+        color: #fff;
+        option{
+            color: #000;
+        }
+    }
+    .login-sub{
+        display: block;
+        width: 100%;
+        height: 66px;
+        text-align: left;
+        margin-bottom: 32px;
+        font-size: 17px;
+        border: none;
+        background: #00ce7d;
+        text-align: center;
+        color: #fff;
+        margin-bottom: 40px;
+        border-radius: 5px;
+
+    }
+    .login-checkbox{
+        margin-top: -5px;
+        margin-bottom: 130px;
+        label{
+            margin-right: 26px;
+            color: #fff;
+            font-size: 15px;
+        }
+    }
+    a{
+        text-decoration: none;
+        color: #fff;
+        padding: 0 14px;
+    }
+    a:nth-child(1){
+        border-right: 1px solid #fff;
+    }
+
+}
+//--------------------------二维码登录
+.qr-form{
+    margin: 0 auto 50px auto;
+    width: 400px;
+    text-align: center;
+    p{
+        padding: 14px 0;
+        font-size: 15px;
+        color: #fff;
+        background: rgba(255,255,255,.2);
+        margin-bottom: 60px;
+    }
+    div{
+        margin-top: 78px;
+        a{
+            text-decoration: none;
+            color: #fff;
+            padding: 0 14px;
+        }
+        a:nth-child(1){
+            border-right: 1px solid #fff;
+        }
+    }
+}
+//-----------------------------注册
+.register-form{
+    margin: 0 auto 50px auto;
+    width: 960px;
+    ::-webkit-input-placeholder{
+        color: #e6e6e6;
+        font-size: 15px;
+    }
+    .step{
+        display: flex;
+        height: 48px;
+        justify-content: center;
+        border-bottom: 2px solid #75bae8;
+        div{
+            width: 188px;
+            height: 48px;
+            color: #75bae8;
+            padding-bottom: 21px;
+            padding-left: 30px;
+            span{
+                display: inline-block;
+                margin-right: 5px;
+                width: 27px;
+                height: 27px;
+                color: #52a8e2;
+                font-weight: 900;
+                background: #75bae8;
+                border-radius: 50%;
+                text-align: center;
+                line-height: 25px;
+            }
+            img{
+                width: 27px;
+                margin-right: 5px;
+            }
+        }
+        .active{
+            border-bottom: 2px solid #fff;
+            color: #fff;
+            span{
+                background: #fff;
+            }
+        }
+    }
+
+    form{
+        margin: 50px auto;
+        width: 400px;
+        input[type="text"],input[type="password"]{
+            height: 66px;
+            border: 1px solid transparent;
+            padding-left: 20px;
+            margin-bottom: 30px;
+            border-radius: 5px;
+            background: rgba(255,255,255,.3);
+        }
+        input:focus{
+            border: 1px solid #dededc;
+        }
+        button{
+            display: inline-block;
+            height: 48px;
+            width: 160px;
+            color: #fff;
+            margin-left: 30px;
+            line-height: 48px;
+            text-align: center;
+            text-decoration: none;
+            border: 1px solid #fff;
+            border-radius: 24px;
+            background: transparent;
+        }
+        input[type="submit"]{
+            margin-top: 135px;
+            height: 66px;
+            border-radius: 5px;
+            background: #00ce7d;
+            border: none;
+            color: #fff;
+        }
+    }
+    .step2{
+        .bigbox{
+            input{
+                margin-bottom: 10px;
+            }
+        }
+        .bigbox:nth-child(4){
+            margin-top: 20px;
+        }
+    }
+    p{
+        margin-top: 50px;
+        color: #fff;
+        text-align: center;
+        span{
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            text-align: center;
+            line-height: 20px;
+            margin-right: 5px;
+            color: #58544d;
+            background: #2991ba;
+            border-radius: 50%;
+        }
+    }
+    .quick-login{
+        display: block;
+        width: 400px;
+        height: 56px;
+        line-height: 56px;
+        text-align: center;
+        text-decoration: none;
+        color: #fff;
+        background: #00ce7d;
+        border-radius: 5px;
+        margin: 200px auto 0 auto;
+    }
+}
+@media screen and (max-width:1500px){
+    .login-title{
+        width: 300px;
+        margin: 100px auto 64px auto;
+    }
+    .login-form{
+        margin: 0 auto 35px auto;
+        width: 280px;
+        h5{
+            margin: 0 0 14px 0;
+            height: 28px;
+            line-height: 28px;
+            span{
+                width: 14px;
+                height: 14px;
+                margin-right: 6px;
+                line-height: 14px;
+            }
+        }
+        .login-btn{
+            width: 100%;
+            height: 46px;
+            margin-bottom: 22px;
+            font-size: 17px;
+            text-indent: 45px;
+            border-radius: 5px;
+            background-position: 10px 10px;
+        }
+        .login-sub{
+            width: 100%;
+            height: 46px;
+            margin-bottom: 22px;
+            font-size: 15px;
+            margin-bottom: 28px;
+            border-radius: 5px;
+
+        }
+        .login-checkbox{
+            margin-top: -4px;
+            margin-bottom: 90px;
+            label{
+                margin-right: 18px;
+                font-size: 14px;
+            }
+        }
+        a{
+            padding: 0 10px;
+        }
+
+    }
+    //--------------------------二维码登录
+    .qr-form{
+        margin: 0 auto 35px auto;
+        width: 280px;
+        p{
+            padding: 10px 0;
+            font-size: 14px;
+            margin-bottom: 48px;
+        }
+        img{
+            width: 168px;
+        }
+        div{
+            margin-top: 55px;
+            a{
+                color: #fff;
+                padding: 0 10px;
+            }
+        }
+    }
+    //-----------------------------注册
+    .register-form{
+        margin: 0 auto 35px auto;
+        width: 672px;
+        ::-webkit-input-placeholder{
+            font-size: 14px;
+        }
+        .step{
+            height: 34px;
+            border-bottom: 2px solid #75bae8;
+            div{
+                width: 132px;
+                height: 34px;
+                padding-bottom: 15px;
+                padding-left: 21px;
+                span{
+                    margin-right: 4px;
+                    width: 19px;
+                    height: 19px;
+                    line-height: 17px;
+                }
+                img{
+                    width: 19px;
+                    margin-right: 4px;
+                }
+            }
+            .active{
+                border-bottom: 2px solid #fff;
+            }
+        }
+
+        form{
+            margin: 35px auto;
+            width: 280px;
+            input[type="text"],input[type="password"]{
+                height: 46px;
+                padding-left: 14px;
+                margin-bottom: 21px;
+                border-radius: 5px;
+            }
+            .checkRes{
+                width: 135px;
+            }
+            button{
+                height: 34px;
+                width: 112px;
+                margin-left: 21px;
+                line-height: 34px;
+                border-radius: 17px;
+            }
+            input[type="submit"]{
+                margin-top: 95px;
+                height: 46px;
+                border-radius: 5px;
+            }
+        }
+        .step2{
+            .bigbox{
+                input{
+                    margin-bottom: 7px;
+                }
+            }
+            .bigbox:nth-child(4){
+                margin-top: 14px;
+            }
+        }
+        p{
+            margin-top: 35px;
+            span{
+                width: 14px;
+                height: 14px;
+                line-height: 14px;
+                margin-right: 4px;
+            }
+        }
+        .quick-login{
+            width: 280px;
+            height: 40px;
+            line-height: 40px;
+            border-radius: 5px;
+            margin: 140px auto 0 auto;
+        }
+    }
+}

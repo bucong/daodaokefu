@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>注册</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1"/>
+	<link rel="stylesheet" href="css/reset.css" />
+	<link rel="stylesheet" href="components/bootstrap/css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="components/font-awesome/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="bodybg">
+<article>
+	<img src="images/title_03.png" class="login-title"/>
+	<section class="register-form">
+		<div class="step">
+			<div class="active"><span>1</span>验证手机号</div>
+			<div><span>2</span>填写账号信息</div>
+			<div><img src="images/notsuccess_03.png"/>注册成功</div>
+		</div>
+		<form action="" method="post">
+			<div class="bigbox">
+				<input type="text" class="width100" name="tel" onblur="checkTel()" placeholder="手机号" /> 
+				<div class="res-tel">
+					<img src="images/info.png"/><span></span>
+				</div>
+			</div>
+			<input type="text" name="" class="checkRes" placeholder="输入验证码" />
+			<button class="send"><label></label><span>发送验证码</span></button>
+			<input type="submit" class="width100" value="下一步"/>
+		</form>
+	</section>
+</article>
+</body>
+<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="components/bootstrap/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" src="js/check.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$('.send').click(function(){
+			$('.send span').html('s后重新获取');
+			$('.send label').html('60');
+			$(this).attr('disabled','disabled');
+			$(this).css({'background':'#96968c','border':'none'});
+			var i=60;
+			time=setInterval(function(){
+				i--;
+				$('.send label').html(i);
+				if(i==0){
+					$('.send span').html('发送验证码');
+					$('.send label').html('');
+					$('.send').removeAttr('disabled');
+					$('.send').css({'background':'transparent','border':'1px solid #fff'});
+					clearInterval(time);
+				}
+			},1000)
+		})
+	})
+</script>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>注册</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1"/>
+	<link rel="stylesheet" href="css/reset.css" />
+	<link rel="stylesheet" href="components/bootstrap/css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="components/font-awesome/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="bodybg">
+<article>
+	<img src="images/title_03.png" class="login-title"/>
+	<section class="register-form">
+		<div class="step">
+			<div class="active"><span>1</span>验证手机号</div>
+			<div class="active"><span>2</span>填写账号信息</div>
+			<div class="active"><img src="images/success_03.png"/>注册成功</div>
+		</div>
+		<p>
+			<img src="images/info_03.png"/>
+			恭喜注册成功！（<label class="seconds">5</label>s）后将自动跳转登录界面或者点击下方按钮，立即登录。
+		</p>
+		<a href="login.html" class="quick-login">立即登录</a>
+	</section>
+</article>
+</body>
+<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="components/bootstrap/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	$(function(){
+		var i=5;
+		time=setInterval(function(){
+			i--;
+			if(i==0){
+				clearInterval(time);
+				location.href="login.html";
+			}
+			$('.seconds').html(i);
+		},1000);
+	})
+</script>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>登录</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1"/>
+	<link rel="stylesheet" href="css/reset.css" />
+	<link rel="stylesheet" href="components/bootstrap/css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="components/font-awesome/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="bodybg">
+<article>
+	<img src="images/title_03.png" class="login-title"/>
+	<section class="login-form">
+		<form action="" method="post" onsubmit="return formCheck()">
+			<h5 class="text-center"><span>!</span>用户名或密码错误</h5>
+			<input type="text" class="login-btn" name="username" onkeyup="checkName()" id="username" value="" placeholder="输入账号" />
+			<select name="company" class="login-btn">
+				<option value="">上海硕道信息技术有限公司</option>
+				<option value="">上海硕道信息技术有限公司</option>
+				<option value="">上海硕道信息技术有限公司</option>
+			</select>
+			<input type="password" class="login-btn" name="password" id="" placeholder="输入密码" />
+			<div class="login-checkbox">
+				<input type="checkbox" name="autoLogin" id="auto-login" value="" />
+				<label for="auto-login">自动登录</label>
+				<input type="checkbox" name="remember" id="remember" value="" />
+				<label for="remember">记住密码</label>
+			</div>
+			<input type="submit" class="login-sub" value="登录"/>
+			<div class="text-center">
+				<a href="qrlogin.html">二维码登录</a>
+				<a href="register.html">免费注册</a>
+			</div>
+		</form>
+	</section>
+</article>
+</body>
+<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="components/bootstrap/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	function checkName(){
+		var name=$('#username').val();
+		if(/^1[3|4|5|7|8]\d{9}$/.test(name)){
+			$('select').show();
+		}else{
+			$('select').hide();
+		}
+	}
+	function formCheck(){
+//		$.ajax({
+//			if(){
+				$('h5').show();
+				return false;
+//			}
+//		})	
+	}
+</script>
+</html>
