@@ -27,7 +27,7 @@ $(function() {
 		console.log('选择的表情是：'+$(this).index());
 		$('.expression').hide();
 		express=false;
-		$('.chat-write textarea').val($('.chat-write textarea').val()+'【'+$(this).index()+'】');
+		$('.chat-write textarea').val($('.chat-write textarea').val()+'['+$(this).index()+']');
 		$('.chat-write textarea').focus();
 	})
 	//当前时间
@@ -87,35 +87,35 @@ $(function() {
 	}
 	$('.chat-write textarea').keyup(function(e){
 		if(e.keyCode==13){
-			var val=$(this).val()
-			$('.chat-write textarea').val('');
-			console.log(val);
-			var valStr=val.replace(/【/g,'<img src="https://res.wx.qq.com/mpres/htmledition/images/icon/emotion/');
-			valStr=valStr.replace(/】/g,'.gif"/>');
-			console.log(valStr);
-			var content='';
-			content+='<li class="clear"></li>';
-			content+='<li class="chat-me">';
-			content+='<p><span>'+nowTime()+'</span></p>';
-			content+='<div>'+valStr+'</div>';
-			content+='</li>';
-			$('.chat-content ul').append(content);
-			//滚动条
-			$('.chat-content').scrollTop($('.chat-content section').height());
-			//向后台发送ajax数据
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
+			if($(this).val().trim().length != 0){
+				var val=$(this).val()
+				$('.chat-write textarea').val('');
+				console.log(val);
+				var valStr=val.replace(/\[/g,'<img src="https://res.wx.qq.com/mpres/htmledition/images/icon/emotion/');
+				valStr=valStr.replace(/]/g,'.gif"/>');
+				console.log(valStr);
+				var content='';
+				content+='<li class="clear"></li>';
+				content+='<li class="chat-me">';
+				content+='<p><span>'+nowTime()+'</span></p>';
+				content+='<div>'+valStr+'</div>';
+				content+='</li>';
+				$('.chat-content ul').append(content);
+				//滚动条
+				$('.chat-content').scrollTop($('.chat-content section').height());
+				//向后台发送ajax数据
+				
+				
+				
+				
+				
+				
+				
+				
+				
+			}else{
+				$(this).val('');
+			}
 		}
 	})
 	//定时接受数据
