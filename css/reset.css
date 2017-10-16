@@ -1,7 +1,7 @@
 @charset "utf-8";
 /*样式重置*/
 body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,
-form,fieldset,legend,button,input,textarea,th,td{margin:0;padding:0;}
+form,fieldset,legend,button,input,textarea,th,td{margin:0;padding:0;font-weight: 300 !important;}
 article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,

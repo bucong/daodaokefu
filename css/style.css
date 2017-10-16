@@ -4,10 +4,11 @@
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.05);
   border-radius: 0;
   margin: 0;
+  padding: 0 30px;
 }
 .navbar .navbar-brand {
   height: auto;
-  padding: 21px 0 21px 50px;
+  padding: 21px 0 21px 0;
 }
 .navbar .navbar-nav {
   padding-top: 15px;
@@ -117,6 +118,7 @@
   font-size: 14px;
   color: #6c7a87;
   padding-left: 40px;
+  line-height: 24px;
 }
 .index-bg {
   position: relative;
@@ -247,6 +249,7 @@ footer span {
 .function-box h3 {
   font-size: 18px;
   margin: 0;
+  margin-bottom: 16px;
 }
 .function-box h3 span {
   display: inline-block;
@@ -258,6 +261,7 @@ footer span {
 .function-box p {
   padding-left: 14px;
   color: #6c7a87;
+  line-height: 24px;
 }
 .function-box ul {
   list-style: none;
@@ -270,6 +274,7 @@ footer span {
 .function-box ul li:before {
   content: "● ";
   color: #51ca2f;
+  line-height: 36px;
 }
 .customer {
   position: relative;
@@ -340,19 +345,6 @@ footer span {
   color: #ccc;
   margin: 30px 0 100px 0;
 }
-.daodao .try-box {
-  width: 60%;
-  margin: 80px auto 120px auto;
-  border: 1px solid #f2f2f2;
-}
-.daodao .try-box .btn-try {
-  margin-top: -26px;
-}
-.daodao .try-box p {
-  text-align: center;
-  color: #a8a8a8;
-  margin: 14px 0;
-}
 .pricebg {
   position: absolute;
   top: 0;
@@ -366,6 +358,10 @@ footer span {
   padding: 12px 0;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.08);
   margin-bottom: 50px;
+  transition: .2s;
+}
+.price .row:hover {
+  margin: 0 -30px 50px 10px;
 }
 .price .version {
   color: #fff;
@@ -397,7 +393,7 @@ footer span {
 }
 .price .the-price h4 {
   border: 1px solid #d2d2d2;
-  color: #d2d2d2;
+  color: #777;
   font-size: 14px;
   width: 84px;
   text-align: center;
@@ -907,6 +903,7 @@ input:focus {
   text-align: center;
   line-height: 50px;
   cursor: pointer;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.06);
 }
 .start-chat-box {
   position: fixed;
@@ -1071,6 +1068,9 @@ input:focus {
 }
 .chat-box .chat-write textarea::-webkit-scrollbar {
   display: none;
+}
+.chat-box .chat-write textarea::-webkit-input-placeholder {
+  color: #ccc;
 }
 .pinfen {
   position: fixed;

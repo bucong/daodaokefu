@@ -5,9 +5,10 @@
     box-shadow: 0 0 30px rgba(0,0,0,.05);
     border-radius: 0;
     margin: 0;
+    padding: 0 30px;
     .navbar-brand{
         height: auto;
-        padding: 21px 0 21px 50px;
+        padding: 21px 0 21px 0;
     }
     .navbar-nav{
         padding-top: 15px;
@@ -121,6 +122,7 @@
         font-size: 14px;
         color: #6c7a87;
         padding-left: 40px;
+        line-height: 24px;
     }
 }
 .index-bg{
@@ -257,6 +259,7 @@ footer{
     h3{
         font-size: 18px;
         margin: 0;
+        margin-bottom: 16px;
         span{
             display: inline-block;
             width: 3px;
@@ -268,6 +271,7 @@ footer{
     p{
         padding-left: 14px;
         color: #6c7a87;
+        line-height: 24px;
     }
     ul{
         list-style: none;
@@ -279,6 +283,7 @@ footer{
         li:before{
             content: "● ";
             color: #51ca2f;
+            line-height: 36px;
         }
     }
 }
@@ -352,19 +357,6 @@ footer{
         color: #ccc;
         margin: 30px 0 100px 0;
     }
-    .try-box{
-        width: 60%;
-        margin: 80px auto 120px auto;
-        border: 1px solid #f2f2f2;
-        .btn-try{
-            margin-top: -26px;
-        }
-        p{
-            text-align: center;
-            color: #a8a8a8;
-            margin: 14px 0;
-        }
-    }
 }
 .pricebg{
     position: absolute;
@@ -380,6 +372,10 @@ footer{
         padding: 12px 0;
         box-shadow: 0 0 30px rgba(0,0,0,.08);
         margin-bottom: 50px;
+        transition: .2s;
+    }
+    .row:hover{
+        margin: 0 -30px 50px 10px;
     }
     .version{
         color: #fff;
@@ -414,7 +410,7 @@ footer{
         }
         h4{
             border: 1px solid #d2d2d2;
-            color: #d2d2d2;
+            color: #777;
             font-size: 14px;
             width: 84px;
             text-align: center;
@@ -946,6 +942,7 @@ input:focus{
     text-align: center;
     line-height: 50px;
     cursor: pointer;
+    box-shadow: 0 10px 20px rgba(0,0,0,.06);
 }
 .start-chat-box{
     position: fixed;
@@ -1111,6 +1108,9 @@ input:focus{
         }
         textarea::-webkit-scrollbar {
           display:none;
+        }
+        textarea::-webkit-input-placeholder{
+            color: #ccc;
         }
     }
 }
